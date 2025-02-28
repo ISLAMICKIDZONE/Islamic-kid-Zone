@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ur">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Islamic Kid Zone</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <img src="mosque-logo.png" alt="Islamic Kid Zone Logo" class="logo">
+        <h1>اسلامک کڈ زون میں خوش آمدید</h1>
+        <button id="menu-toggle">☰</button>
+        <nav>
+            <ul id="nav-links">
+                <li><a href="#home">ہوم</a></li>
+                <li><a href="#stories">کہانیاں</a></li>
+                <li><a href="#lessons">اسباق</a></li>
+                <li><a href="#activities">سرگرمیاں</a></li>
+                <li><a href="#resources">وسائل</a></li>
+                <li><a href="#videos">ویڈیوز</a></li>
+                <li><a href="#cartoons">اسلامی کارٹون</a></li>
+            </ul>
+        </nav>
+        <button id="dark-mode-toggle">🌙</button>
+    </header>
+    
+    <main>
+        <section id="home">
+            <h2>خوش آمدید</h2>
+            <p>یہ ایک ایسی جگہ ہے جہاں بچے دلچسپ اور تفریحی طریقے سے اسلام سیکھ سکتے ہیں۔</p>
+        </section>
+
+        <section id="cartoons">
+            <h2>اسلامی کارٹونز</h2>
+            <p>تفریحی اور سبق آموز اسلامی کارٹونز دیکھیں۔</p>
+
+            <div class="cartoon" onclick="openPopup('https://www.youtube.com/embed/bWuZrWJjE7M')">
+                <h3>غلام رسول کارٹون</h3>
+            </div>
+
+            <div class="cartoon" onclick="openPopup('https://www.youtube.com/embed/F4_LqzVjl2E')">
+                <h3>عمر اور حنا</h3>
+            </div>
+
+            <div class="cartoon" onclick="openPopup('https://www.youtube.com/embed/صحیح_ویڈیو_ID')">
+                <h3>کنیز فاطمہ کارٹون</h3>
+            </div>
+
+            <div class="cartoon" onclick="openPopup('https://www.youtube.com/embed/صحیح_ویڈیو_ID')">
+                <h3>مدنی کارٹون</h3>
+            </div>
+        </section>
+    </main>
+
+    <!-- Popup Video Player -->
+    <div id="video-popup">
+        <div id="video-container">
+            <span id="close-popup" onclick="closePopup()">×</span>
+            <iframe id="popup-video" width="560" height="315" src="" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Islamic Kid Zone. تمام حقوق محفوظ ہیں۔</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
